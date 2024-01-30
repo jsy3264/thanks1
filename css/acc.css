@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+#brend {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-bottom: 40px;
+
+}
+
+.brend_boxin {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brend_boxin h2 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.brend_boxin h2::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    margin: auto;
+    height: 44px;
+    background-color: rgb(241, 158, 158);
+    /* border: 1px solid black; */
+    z-index: -1;
+    margin-top: -7px;
+    margin-left: -17px;
+    border-radius: 5px;
+}
+
+#brend ul {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    /* border: 1px solid red; */
+    list-style: none;
+}
+
+#brend ul li {
+    width: 100%;
+    margin: auto;
+    /* height: 400px; */
+    margin: 30px 5px;
+    /* position: relative; */
+    /* border: 1px solid rgb(98, 35, 200); */
+
+}
+
+.brend-img {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    /* border: 1px solid red; */
+    filter: grayscale(0%);
+    cursor: pointer;
+    /* border-radius: 30px; */
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+    /* transition: all 1s ease-in-out; */
+
+}
+
+.brend-img img {
+    width: 100%;
+}
+
+#brend ul li:hover img {
+    /* -webkit-filter: grayscale(100%); */
+    filter: grayscale(100%);
+    /* filter: grayscale(0%); */
+    border-radius: 30px 30px 0 0;
+
+}
+
+#brend .block2 {
+    /* position: absolute; */
+    /* top: 450px; */
+    width: 100%;
+    /* height: 15%; */
+    border: 2px solid rgb(239, 172, 172);
+    margin: auto;
+    background: rgb(239, 172, 172);
+    /* background: rgb(255, 255, 255, 0.5); */
+    padding-bottom: 10px;
+
+}
+
+.block2 p {
+    display: none;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+
+}
+
+.block2:hover>p {
+    display: block;
+    opacity: 1;
+}
+
+.block2 p {
+    width: 80%;
+    margin: auto;
+    padding-top: 4px;
+    font-size: 1.2rem;
+    text-align: start;
+
+}
+
+#brend ul li:hover .block2 {
+    /* top: 50%;
+    height: 40%; */
+    background: rgba(254, 254, 254, 0.5);
+    /* background: rgba(163, 14, 34, 0.7); */
+    border-radius: 0 0 30px 30px;
+    color: rgb(97, 4, 4);
+    padding-bottom: 10px;
+    transition: all 1s ease-in-out;
+
+}
+
+#brend img {
+    transition: all 0.5s;
+}
+
+#brend .block2 {
+    transition: all 0.5s;
+}
+
+.block2 h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:450px) {}
+
+@media screen and (min-width:540px) {}
+
+@media screen and (min-width:640px) {}
+
+@media screen and (min-width:768px) {
+    #brend ul {
+        width: 45%;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .brend_boxin h2 {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-size: 2.7rem;
+        z-index: 0;
+        position: relative;
+        margin-bottom: 40px;
+        margin-top: 80px;
+    }
+
+    .brend_boxin h2::before {
+        content: "";
+        position: absolute;
+        width: 430px;
+        margin: auto;
+        height: 64px;
+        background-color: rgb(241, 158, 158);
+        /* border: 1px solid black; */
+        z-index: -1;
+        margin-top: -10px;
+        margin-left: -17px;
+        border-radius: 5px;
+    }
+}

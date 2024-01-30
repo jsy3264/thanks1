@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "font-family: 'Noto Sans KR', sans-serif;";
+    src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400&display=swap");
+}
+
+.card-wrap {
+    width: 90%;
+    max-width: 768px;
+    margin: auto;
+    margin-top: -20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.card-wrap img {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.card .item {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.card .item.front {
+    position: absolute;
+    transform: rotateY(0deg);
+
+}
+
+.card:hover .item.front {
+    transform: rotateY(-180deg);
+    transition: 1s;
+}
+
+.card .item.back {
+    transform: rotateY(180deg);
+
+}
+
+.card:hover .item.back {
+    transform: rotateY(0deg);
+    transition: 1s;
+
+}
+
+.nts {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(135, 5, 5);
+    margin-bottom: 70px;
+}
+
+.home {
+    width: 100%;
+    max-width: 768px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -20px;
+}
+
+h6 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    color: rgb(94, 3, 3);
+
+}
+
+.home i {
+    color: rgb(94, 3, 3);
+}
+
+.home {
+    width: 100%;
+    max-width: 768px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    margin-top: 20px;
+    color: rgb(94, 3, 3);
+}
+
+.home>a {
+    color: rgb(94, 3, 3);
+    font-size: 1.5rem;
+
+}
+
+.cont-wrap {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.cont07 {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.cont {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    margin-bottom: 70px;
+    background-color: rgb(248, 249, 251);
+    box-shadow: 3px 3px 1.5px aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.cont:hover {
+    transform: scale(1.1);
+}
+
+.cont>span {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: -30px; */
+    /* border: 1px solid black; */
+
+}
+
+.cont img {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    margin-right: 8px;
+}
+
+.cont>p {
+    width: 100%;
+    text-align: start;
+    line-height: 1.9rem;
+    padding: 5px;
+}
+
+.star {
+    position: relative;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    margin-bottom: 65px;
+    margin-left: -10px;
+    /* margin: 30px 0;
+    margin-left: 20px; */
+    color: #ffd67a;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 14px solid #ffd67a;
+    transform: rotate(35deg);
+}
+
+.star::before,
+.star::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    top: 0;
+    height: 0px;
+    color: #ffd67a;
+    left: -20px;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 14px solid #ffd67a;
+}
+
+.star::before {
+    transform: rotate(71deg);
+}
+
+.star::after {
+    transform: rotate(-71deg);
+}
+
+@media screen and (min-width:768px) {
+    .home a {
+        padding-left: 20px;
+        font-size: 2.3rem;
+        color: rgb(94, 3, 3);
+    }
+
+    .nts {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 1.9rem;
+        margin-bottom: 100px;
+    }
+
+    h6 {
+        font-size: 2.8rem;
+    }
+
+
+}
+
+@media screen and (min-width:1024px) {
+    /* h2 {
+        text-align: center;
+    } */
+
+    .home a {
+        margin-top: 100px;
+        margin-left: 120px;
+        font-size: 3rem;
+        color: rgb(94, 3, 3);
+    }
+
+    .nts {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 2.3rem;
+        margin-bottom: 100px;
+    }
+
+    h6 {
+        font-size: 3.5rem;
+    }
+}

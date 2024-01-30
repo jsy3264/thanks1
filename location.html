@@ -1,0 +1,137 @@
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/location.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $(".map").eq(0).css({ display: "flex" })
+        $(".lo-title a").click(function () {
+            $(".map").hide();
+            $(this.hash).show().css({ display: "flex" });
+            $(".lo-title a").removeClass("active");
+            $(this).addClass("active")
+        })
+    })
+</script>
+
+<body>
+    <div class="home">
+        <a href="index.html"><i class="fa-solid fa-house"></i> 홈</a>
+    </div>
+    <div id="location_wrap">
+        <div class="section-con">
+            <div class="title-con">
+                <div>
+                    <p class="nun">Dream Nungill</p>
+                    <h2>Location</h2>
+                    <p>찾아오시는 길</p>
+                </div>
+                <div class="lo-title-g">
+                    <div class="lo-title">
+                        <a href="#mapone">의정부 본사</a>
+                        <a href="#maptwo">청담동 매장</a>
+                        <a href="#mapthree">중앙동 매장</a>
+                    </div>
+                    <hr>
+                </div>
+                <div class="map" id="mapone">
+                    <div class="mapex">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120113.71849056522!2d127.09248879913179!3d37.71146513446824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1705382033972!5m2!1sko!2skr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <h5>의정부 본사</h5>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>의정부시 의정부동 호국로 32번길</dd>
+                            <dt>대표번호</dt>
+                            <dd>033-769-8400</dd>
+                            <dt>찾아오시는 방법</dt>
+                            <dd>
+                                <p class="vehicle">대중교통 이용시</p>
+                                <p class="route">
+                                    의정부역 동부광장 앞 51번 승차 → E.mart 하차 → 300m 직진 도보 5분내 위치
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="vehicle">자가용 운전시</p>
+                                <p class="route">
+                                    의정부역 → 의정부 경찰서 사거리에서 우회전 → 성모병원방향 3km직진 → 드림빌딩 목적지 도착
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="map" id="maptwo">
+                    <div class="mapex">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12657.35331128941!2d127.03912005285218!3d37.523521219173006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1705382553321!5m2!1sko!2skr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <h5>청담동 매장</h5>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>서울특별시 강남구 압구정로 440</dd>
+                            <dt>대표번호</dt>
+                            <dd>02-7890-0954</dd>
+                            <dt>찾아오시는 방법</dt>
+                            <dd>
+                                <p class="vehicle">대중교통 이용시</p>
+                                <p class="route">
+                                    3호선 압구정역 이용시 2번 출구 -> 코엑스 방향으로 약 150m 파란색버스 143,62 / 녹색버스 18,49
+                                    3번째 정거장(설화빌딩)앞 하차
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="vehicle">자가용 운전시</p>
+                                <p class="route">
+                                    청담사거리에서 성수대교 방향 직진 후 갤러리아 백화점 사거리에서 유턴 후 버스정류장에서 우회전 드림눈길 서울사무소
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="map" id="mapthree">
+                    <div class="mapex">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12691.008330177357!2d126.82653505271728!3d37.32469981526672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1705382598301!5m2!1sko!2skr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <h5>중앙동 매장 </h5>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>경기도 안산시 중구 중앙로 88 ( 신동 486 ) MOM편한세상 101동 601호</dd>
+                            <dt>대표번호</dt>
+                            <dd>031-695-8265</dd>
+                            <dt>찾아오시는 방법</dt>
+                            <dd>
+                                <p class="vehicle">대중교통 이용시</p>
+                                <p class="route">
+                                    안산 중앙역 세화플라자 2번 승강장 5,310,240 빨강 버스 승차 -> 청와아파트 정류장에서 하차->길 건넌 후 5분 도보 -> 엠파이어빌딩
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="vehicle">자가용 운전시</p>
+                                <p class="route">
+                                    -안산IC에서 중앙역->팔달로 직진 2Km
+                                    ->남부우회로 권선동 방면
+                                    ->삼화 빌딩 3층 101
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>

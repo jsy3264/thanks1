@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="패션, dream nungill, 트랜드, 스타일">
+    <meta name="description" content="패션은 지나가지만 스타일은 영원합니다.">
+    <meta name="autor" content="js young">
+    <meta property="og:type" content="html">
+    <meta property="og:title" content="Dream Nungill">
+    <meta property="og:description" content="패션은 지나가지만 스타일은 영원합니다.">
+    <meta property="og:image" content="./images/dream.jpg">
+    <meta property="og:url" content="#">
+    <title>Dream Nungill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/roll.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/congra.css">
+    <link rel="stylesheet" href="./css/acc.css">
+    <link rel="shortcut icon" href="./images/favicons.png">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/slide.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+
+            let roller = document.querySelector('.roller');
+            roller.id = 'roller1';
+
+            let clone = roller.cloneNode(true);
+            clone.id = 'roller2';
+            document.querySelector('.wrap').appendChild(clone);
+
+            document.querySelector('#roller1').style.left = '0px';
+            document.querySelector('#roller2').style.left = document.querySelector('.roller ul').offsetWidth + 'px';
+
+            roller.classList.add('original');
+            clone.classList.add('clone');
+        }, 800);
+
+
+        // document.addEventListener('mousemove', (e) => {
+        //     let mouseX = e.pageX + 5;
+        //     let mouseY = e.pageY + 7;
+
+        //     let cursor = document.querySelector('.cursor');
+        //     cursor.style.left = mouseX + 'px';
+        //     cursor.style.top = mouseY + 'px';
+        // })
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="header-position">
+            <header>
+                <div id="header-container">
+                    <h1>
+                        <a href="index.html"><i class="fa-brands fa-accusoft"></i> DREAM NUNGILL</a>
+                    </h1>
+                    <nav id="d-nav">
+                        <div class="d-menu">
+                            <div class="first-dnav">
+                                <a href="#">신제품</a>
+                                <div class="sub-dmenu">
+                                    <a href="#">Outer/</a>
+                                    <a href="#">Top/Bottom</a>
+                                    <a href="#">Dress/Set</a>
+                                    <div class="sub-b">
+                                        <img src="./images/sub-1.jpg">&nbsp;&nbsp;&nbsp;
+                                        <p>바보가 유행을 만들고,<br><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현명한 자가 그것을 입는다.</p>
+                                    </div>
+                                    <a href="#" class="link_btn"><span class="lin-b">상세 보기</span></a>
+                                </div>
+                            </div>
+                            <div class="first-dnav">
+                                <a href="#">베스트</a>
+                                <div class="sub-dmenu">
+                                    <a href="#">Outer/</a>
+                                    <a href="#">Top/Bottom</a>
+                                    <a href="#">Dress/Set</a>
+                                    <div class="sub-b">
+                                        <img src="./images/sub2.jpg">&nbsp;&nbsp;&nbsp;
+                                        <p>유행과 시대로부터, 독립<br><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;하려는 목표를 가져야만 한다.</p>
+                                    </div>
+                                    <a href="#" class="link_btn"><span class="lin-b">상세 보기</span></a>
+                                </div>
+                            </div>
+                            <div class="first-dnav">
+                                <a href="#">이벤트</a>
+                                <div class="sub-dmenu">
+                                    <a href="#">Outer/</a>
+                                    <a href="#">Top/Bottom</a>
+                                    <a href="#">Dress/Set</a>
+                                    <div class="sub-b">
+                                        <img src="./images/sub3.jpg">&nbsp;&nbsp;&nbsp;
+                                        <p>패션은 음식과 같다. 맛과,<br><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;감각이 좋고, 보기 좋으면 된다.</p>
+                                    </div>
+                                    <a href="#" class="link_btn"><span class="lin-b">상세 보기</span></a>
+                                </div>
+                            </div>
+                            <div class="first-dnav">
+                                <a href="#">언더웨어</a>
+                                <div class="sub-dmenu">
+                                    <a href="#">Top</a>
+                                    <a href="#">Bottom</a>
+                                    <a href="#">Allinone</a>
+                                    <div class="sub-b">
+                                        <img src="./images/sub4.jpg">&nbsp;&nbsp;&nbsp;
+                                        <p>지식조차도 시대에 맞는<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;것이어야 한다. 그렇지
+                                            않으면,
+                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지식이 있어도 무지한 자다.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="link_btn"><span class="lin-b">상세 보기</span></a>
+                                </div>
+                            </div>
+                            <div class="first-dnav">
+                                <a href="#">악세서리</a>
+                                <div class="sub-dmenu">
+                                    <a href="#">Bag</a>
+                                    <a href="#">Shoes</a>
+                                    <a href="#">Acc</a>
+                                    <div class="sub-b">
+                                        <img src="./images/sub5.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <p>유행을 벗어난 바보 말고,<br><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;유행을 따르는 바보가 되라.</p>
+                                    </div>
+                                    <a href="#" class="link_btn"><span class="lin-b">상세 보기</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sns-dg">
+                            <a href="#">
+                                <button class="fa-solid fa-user dface"></button>
+                            </a>
+                            <a href="#">
+                                <button class="fa-regular fa-cart-arrow-down dtwitter"></button>
+                            </a>
+                        </div>
+                        <div class="login-dg">
+                            <a href="signin-up.html">로그인 / 회원가입</a>
+                        </div>
+                        <div class="full-back">&nbsp;</div>
+                    </nav>
+                    <nav id="m-nav">
+                        <div class="ss">
+                            <a href="#">
+                                <button class="fa-solid fa-user my"></button>
+                            </a>
+                            <a href="#">
+                                <button class="fa-solid fa-cart-arrow-down shop"></button>
+                            </a>
+                        </div>
+                        <button class="fa-solid fa-bars open"></button>
+                        <div class="m-wrap">
+                            <div class="m-body">
+                                <button class="fa-solid fa-xmark close"></button>
+                                <div class="login-g">
+                                    <a href="signin-up.html">로그인 / 회원가입</a>
+                                </div>
+                                <div class="m-menu">
+                                    <div class="first-nav">
+                                        <a href="#">신제품<span class="fa-solid fa-plus arrow"></span></a>
+                                        <div class="sub-menu">
+                                            <a href="#">Outer/</a>
+                                            <a href="#">Top/Bottom</a>
+                                            <a href="#">Dress/Set</a>
+                                            <div class="x-img1">
+                                                <a href="#">
+                                                    <img src="./images/nsub.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-nav">
+                                        <a href="#">베스트<span class="fa-solid fa-plus arrow"></span></a>
+                                        <div class="sub-menu">
+                                            <a href="#">Outer/</a>
+                                            <a href="#">Top/Bottom</a>
+                                            <a href="#">Dress/Set</a>
+                                            <div class="x-img2">
+                                                <a href="#">
+                                                    <img src="./images/msub1.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-nav">
+                                        <a href="#">이벤트<span class="fa-solid fa-plus arrow"></span></a>
+                                        <div class="sub-menu">
+                                            <a href="#">Outer/</a>
+                                            <a href="#">Top/Bottom</a>
+                                            <a href="#">Dress/Set</a>
+                                            <div class="x-img3">
+                                                <a href="#">
+                                                    <img src="./images/msub3.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-nav">
+                                        <a href="#">언더웨어<span class="fa-solid fa-plus arrow"></span></a>
+                                        <div class="sub-menu">
+                                            <a href="#">Top</a>
+                                            <a href="#">Bottom</a>
+                                            <a href="#">Allinone</a>
+                                            <div class="x-img4">
+                                                <a href="#">
+                                                    <img src="./images/msub2.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="first-nav">
+                                        <a href="#">악세서리<span class="fa-solid fa-plus arrow"></span></a>
+                                        <div class="sub-menu">
+                                            <a href="#">Bag</a>
+                                            <a href="#">Shoes</a>
+                                            <a href="#">Acc</a>
+                                            <div class="x-img">
+                                                <a href="#">
+                                                    <img src="./images/msub4.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="sns-g">
+                                    <a href="#">
+                                        <button class="fa-brands fa-square-facebook face"></button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="fa-brands fa-square-twitter twitter"></button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="fa-brands fa-square-instagram instagram"></button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <section>
+            <div class="m-slide">
+                <!-- <a href="#">
+                    <img src="./images/room2.jpg" alt="메인 이미지">
+                </a> -->
+                <picture>
+                    <source media="(min-width:650px)" srcset="./images/room1.jpg">
+                    <img src="./images/room2.jpg" alt="메인 이미지">
+                </picture>
+            </div>
+            <div class="goodby-g">
+                <div class="bts-g">
+                    <div class="bts-gg">
+                        <div class="bts-h">
+                            <button class="fa-solid fa-xmark close" bts-b></button>
+                            <h3>배송지연 안내</h3>
+                            <div class="bts-p">
+                                <p>대설로 인한 기상악화가 계속되고 있습니다.<br>
+                                    정상화되는 시간이 다소 늦어지는 이유로,<br>
+                                    지역에 따라 택배 도착이 지연되고 있습니다.<br>
+                                    <span>죄송합니다.&nbsp; 불편하시겠지만, <br>
+                                        조금만 기다려 주시면 감사하겠습니다.</span>
+                                </p>
+                            </div>
+                            <div class="t-img">
+                                <img src="./images/tuck.gif">
+                            </div>
+                        </div>
+                        <!-- <div class="bts-img">
+                            <img src="#">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="goodby-p">
+                    <h2>2024 NEW YEAR'S EVENT</h2>
+                    <p><span>새해 복 많이 받으세요!</span><br>당신만큼 &nbsp;밝고 아름답기를 바랍니다.</p>
+                </div>
+                <div class="event-g">
+                    <div class="event1">
+                        <div class="event-sss">
+                            <a href="#">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </a>
+                        </div>
+                        <div class="event">
+                            <!-- <button class="bts">배송관련 공지사항</button> -->
+                            <a href="#" class="bts">배송관련 공지사항</a>
+                            <h3>전상품 무료 배송</h3>
+                            <p>구매 금액 상관없이<br>모든 구매 고객 무료 배송</p>
+                        </div>
+                    </div>
+                    <div class="event2">
+                        <div class="event-ss">
+                            <!-- <a href="#"> -->
+                            <h2>35<span>%</span></h2>
+                            <!-- </a> -->
+                        </div>
+                        <div class="event">
+                            <h3>첫 구매 이벤트<span> 20% OFF</span></h3>
+                            <p>Dream Nungill을 <br>처음 이용해 주시는 고객님께<br>전체 구매 금액의 20% 할인!</p>
+                        </div>
+                    </div>
+                    <div class="event3">
+                        <div class="event-s">
+                            <!-- <a href="#"> -->
+                            <h2>福</h2>
+                            <!-- </a> -->
+                        </div>
+                        <div class="event">
+                            <h3>신년 복(福) 이벤트 <span>15% OFF</span></h3>
+                            <p>모든 구매 제품 15% 할인<br>첫 구매 이벤트와 함께<br>중복 할인 가능합니다!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="ani-t">
+                <div class="track">
+                    <div class="context">
+                        <marquee behavior="scroll" scrolldelay="60"> &nbsp;◈ 2024 NEW COLLECTION!
+                            <span>20%</span><i class="fa-solid fa-arrow-down"></i> 할인된 가격으로 만날 수
+                            있는 특별한 기회 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                            &nbsp;◈ 2023 F/W SEASON NEW ARRIVALS! 시즌 오프 특별 세일 <span>30%</span><i
+                                class="fa-solid fa-arrow-down"></i> 이벤트 기획전 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+
+                            &nbsp;◈ 2023 LIMITIED EDITION GOODBYE LAST CHANCE! <span>25%</span><i
+                                class="fa-solid fa-arrow-down"></i> 스페셜
+                            에디션
+                            마지막 감사 세일 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                            &nbsp;<span>&nbsp; &nbsp; ♥ ♥ ♥</span> &nbsp;성원에
+                            감사드립니다. <span>♥ ♥ ♥</span>
+                        </marquee>
+                    </div>
+                </div>
+            </div> -->
+            <div class="roll-container">
+                <div class="rollingbanner">
+                    <div class="wrap">
+                        <div class="roller">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <strong class="name"> ◈&nbsp; 2024&nbsp; NEW &nbsp;COLLECTION&nbsp; !
+                                        </strong>
+                                        <span> 30% </span><i class="fa-solid fa-arrow-down"></i> 할인된 가격으로 만날 수 있는 특별한 기회
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong class="name">◈ &nbsp;2023 &nbsp; F/W&nbsp; SEASON&nbsp; NEW
+                                            &nbsp;ARRIVALS&nbsp; ! </strong>
+                                        <span> 20% </span><i class="fa-solid fa-arrow-down"></i> 시즌 오프 특별 기획 이벤트 세일
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong class="name">&nbsp; ◈&nbsp; 2023&nbsp; LIMITIED &nbsp;EDITION
+                                            &nbsp;GOODBYE &nbsp;LAST&nbsp; CHANCE&nbsp; ! </strong>
+                                        <span> 25% </span><i class="fa-solid fa-arrow-down"></i> 스페셜 에디션 마지막 감사 세일
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong class="name">&nbsp; ◈ &nbsp;HAPPY &nbsp;NEW &nbsp;YEAR&nbsp; ! </strong>
+                                        <span>♥ ♥ ♥ &nbsp;성원에 감사드립니다.&nbsp; ♥ ♥ ♥</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-wrap">
+                <div class="slide-container">
+                    <div class="slide-slide1">
+                        <div class="slide">
+                            <!-- <a href="#"> -->
+                            <img src="./images/767.jpg">
+                            <!-- </a> -->
+                        </div>
+
+                        <div class="stext">
+                            <p><span>2024 NEW COLLECTION !</span><br>
+                                EVENT PROMOTION SALE</p>
+                            <p><span>20% </span>할인된 가격으로 <br>
+                                만날 수 있는 특별한 기회 !</p>
+                            <a href="https://jsy3264.github.io/first2/" target="_blank" class="btn">시즌 컬렉션 더보기</a>
+
+                        </div>
+                    </div>
+                    <div class="slide-slide1">
+                        <div class="slide">
+                            <!-- <a href="#"> -->
+                            <img src="./images/season-fw1.jpg">
+                            <!-- </a> -->
+                        </div>
+
+                        <div class="stext1">
+                            <p><span>2023 F/W SEASON NEW ARRIVALS!</span><br>
+                                SEASON OFF SPECIAL SALE</p>
+                            <p><span>30% </span>할인된 가격으로 <br>
+                                만날 수 있는 이벤트 기획전 !</p>
+                            <a href="#!" class="btn">이벤트 컬렉션 더보기</a>
+
+                        </div>
+                    </div>
+                    <div class="slide-slide1">
+                        <div class="slide">
+                            <!-- <a href="#"> -->
+                            <img src="./images/404.jpg">
+                            <!-- </a> -->
+                        </div>
+
+                        <div class="stext3">
+                            <p><span>2023 LIMITED EDITION !</span><br>
+                                GOODBYE ONE LAST CHANCE</p>
+                            <p><span> 리미티드 에디션 25% </span> 마지막 세일 <br>
+                                만날 수 있는 특별한 기회 !</p>
+                            <a href="#!" class="btn">리미티드 에디션 더보기</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="season-container">
+                <div class="season-group">
+                    <div class="season-text">
+                        <h2>SEASON LOOKBOOK</h2>
+                        <P>색체의 미학 ! &nbsp;&nbsp;눈길의 새로운 디자인</P>
+                        <img src="./images/797design1.jpg">
+                    </div>
+                    <div class="slider-group">
+                        <h5>색에 대한 감각을 느껴보세요</h5>
+                        <p>세상에 전혀 예쁘지 않은 색은 없다 !</p>
+                        <div class="slide-g">
+                            <div class="sliders">
+                                <div class="slides">
+                                    <!-- <a href="#"> -->
+                                    <img src="./images/slide1.jpg">
+                                    <!-- </a> -->
+                                </div>
+                                <div class="slides">
+                                    <!-- <a href="#"> -->
+                                    <img src="./images/slide2.jpg">
+                                    <!-- </a> -->
+                                </div>
+                                <div class="slides">
+                                    <!-- <a href="#"> -->
+                                    <img src="./images/slide3.jpg">
+                                    <!-- </a> -->
+                                </div>
+                                <div class="slides">
+                                    <!-- <a href="#"> -->
+                                    <img src="./images/slide4.jpg">
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+                            <button class="slide-button prevbt ">&lt;</button>
+                            <button class="slide-button nextbt ">&gt;</button>
+                        </div>
+                        <div class="pagenation">
+                            <span class="dot active"></span>
+                            <!-- <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span> -->
+                        </div>
+                        <a href="./detail.html" class="btn">디자인 자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="review-wrap">
+                <div class="review-w">
+                    <!-- <img src="./images/review2.png"> -->
+                    <picture>
+                        <source media="(min-width:450px)" srcset="./images/review2.png">
+                        <img src="./images/review.png" alt="메인 이미지">
+                    </picture>
+                    <div class="wrap-title">
+                        <h2>REVIEW EVENT</h2>
+                        <p>드림과 함께한 경험은 어떠셨나요?<br>
+                            제품 구매 후 진솔한 리뷰를 남겨주신 분들 중,<br>
+                            다섯 분을 선정하여 특별한 선물을 드립니다.<br>
+                            당신의 소중한 후기를 기대합니다!
+                        </p>
+                    </div>
+                </div>
+                <a href="./congra.html" class="btn">당첨자 보기</a>
+            </div>
+            <div id="brend">
+                <div class="brend_boxin">
+                    <h2>TODAY'S &nbsp;COLLECTION</h2>
+                    <ul class="brend-ss">
+                        <li>
+                            <div class="brend-img">
+                                <img src="./images/acc1.jpg" alt="acc">
+                                <div class="block2">
+                                    <h3>COLLECTION BR020 BAG</h3>
+                                    <p><strong>Design No.345 </strong>:<br /> 휴대할 수 있는것만
+                                        소유하고 가방은 가볍게, 추억을 여행 가방 삼아 행복하자!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="brend_support clear">
+                        <li>
+                            <div class="brend-img">
+                                <img src="./images/acc2.jpg" alt="acc">
+                                <div class="block2">
+                                    <h3>COLLECTION BN GLASSES</h3>
+                                    <p><strong>Design No.654 </strong>:<br />안경을 쓰는 이유가 '잘 안보여서'가
+                                        아니라 '더 잘 보려고' 이어야한다. 마음의 눈!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="brend_support clear">
+                        <li>
+                            <div class="brend-img">
+                                <img src="./images/acc4.jpg" alt="acc">
+                                <div class="block2">
+                                    <h3>COLLECTION AN WATCH</h3>
+                                    <p><strong>Design No.876 </strong>:<br />빠르든 늦든 각자의 속도에 맞게
+                                        자신의 역할을 묵묵히 지켜내자. 존재의 의미! </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="brend_support clear">
+                        <li>
+                            <div class="brend-img">
+                                <div class="img-b">
+                                    <img src="./images/acc3.jpg" alt="acc">
+                                </div>
+                                <div class="block2">
+                                    <h3>COLLECTION JEW BROOCH</h3>
+                                    <p><strong>Design No.123 </strong>:<br /> 내 비장의 무기는 항상 손안에
+                                        있다. 잠시 잊고 있을뿐... 그것은 희망일까.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="f_bg">
+            <footer>
+                <div id="f_logo_sns">
+                    <p class="logo"><a href="#!">
+                            <i class="fa-brands fa-accusoft"> DREAM NUNGILL</i></a></p>
+                    <div class="sns">
+                        <a href="#!"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#!"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#!"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div id="f_menu">
+                    <ul class="main">
+                        <li>
+                            <div class="title">
+                                <a href="#!">DREAM NUNGILL</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="sub">
+                                <li><a href="#!">브랜드 소개</a></li>
+                                <li><a href="#!">OUR STORE</a></li>
+                                <li><a href="#!">대표 전화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">고객관리지원팀</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="sub">
+                                <li><a href="#!">묻고 답하기</a></li>
+                                <li><a href="#!">배송정보</a></li>
+                                <li><a href="#!">반품 및 교환</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">ABOUT DREAM</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="sub">
+                                <li><a href="#!">드림눈길 멤버십</a></li>
+                                <li><a href="#!">나의 드림눈길</a></li>
+                                <li><a href="#!">채용 정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">내 정보 및 주문관리</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="sub">
+                                <li><a href="#!">내 정보 확인 및 수정</a></li>
+                                <li><a href="#!">주문 조회</a></li>
+                                <li><a href="#!">주문 내역 조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">매장 찾아 가는길</a>
+                                <a href="#!" class="fa-solid fa-angle-down  fold_btn"></a>
+                            </div>
+                            <ul class="sub">
+                                <li><a href="./location.html"><button class="btn">매장 찾기</button></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="d_menu">
+                    <ul class="main">
+                        <li>
+                            <div class="title">
+                                <a href="#!">DREAM NUNGILL</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="subs">
+                                <li><a href="#!">브랜드 소개</a></li>
+                                <li><a href="#!">OUR STORE</a></li>
+                                <li><a href="#!">대표 전화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">고객관리지원팀</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="subs">
+                                <li><a href="#!">묻고 답하기</a></li>
+                                <li><a href="#!">배송정보</a></li>
+                                <li><a href="#!">반품 및 교환</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">ABOUT DREAM</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="subs">
+                                <li><a href="#!">드림눈길 멤버십</a></li>
+                                <li><a href="#!">나의 드림눈길</a></li>
+                                <li><a href="#!">채용 정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">내 정보 및 주문관리</a>
+                                <a href="#!" class="fa-solid fa-angle-down fold_btn"></a>
+                            </div>
+                            <ul class="subs">
+                                <li><a href="#!">내 정보 확인 및 수정</a></li>
+                                <li><a href="#!">주문 조회</a></li>
+                                <li><a href="#!">주문 내역 조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <a href="#!">매장 찾아 가는길</a>
+                                <a href="#!" class="fa-solid fa-angle-down  fold_btn"></a>
+                            </div>
+                            <ul class="subs">
+                                <li><a href="./location.html"><button class="btn">매장 찾기</button></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="f_btm">
+                    <div class="menu">
+                        <a href="#!">이용약관 |</a>
+                        <a href="#!">개인정보처리방침 |</a>
+                        <a href="#!">사업자정보조회</a>
+                    </div>
+                    <div class="info">
+                        <p>Copyright© Dream Nungill. All Rights Reserved.</p>
+                        <p>드림눈길(유) 대표 HEEYAA, CHO-SUN</p>
+                        <p>의정부시 호국로 787 (의정부동) 트루타워, 06772</p>
+                        <p>사업자등록번호: 5432-76-789012</p>
+                        <p> 통신판매업신고번호: 경기북부-15777호</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="footer-side-fix">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <!-- <div class="cursor">
+            <img src="./images/favicons1.png">
+        </div> -->
+    </main>
+</body>
+
+</html>
