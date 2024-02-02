@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+html,
+body {
+    background-color: white;
+    font-size: 14px;
+    font-family: "맑은고딕";
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    vertical-align: middle;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+
+}
+
+.home {
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+.home a {
+    color: rgb(45, 43, 43);
+    font-size: 1rem;
+}
+
+#location_wrap {
+    width: 100%;
+    margin: auto;
+    max-width: 1024px;
+    height: 100%;
+    padding-top: 20px;
+    /* padding: 30px 0; */
+
+}
+
+.section-con {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+}
+
+.title-con>div>p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444
+}
+
+.title-con>div>.nun {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.title-con>div>h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #222222
+}
+
+/* .title-con {
+    width: 100%;
+    float: left;
+    border: 1px solid black;
+
+} */
+
+.lo-title {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    /* border:1px solid black; */
+    margin-bottom: 20px;
+}
+
+.lo-title a {
+    padding: 0;
+    /* border:1px solid black; */
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #444;
+    border-bottom: 1px solid white;
+}
+
+.lo-title a.active {
+    border-bottom: 1px solid #333;
+}
+
+hr {
+    width: 100%;
+    margin-top: 10px;
+    background: rgb(224, 221, 221);
+    height: 1px;
+    border: 0;
+}
+
+.map {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    /* border: 1px solid rgb(194, 191, 191); */
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-con {
+    width: 100%;
+
+}
+
+.mapex {
+    width: min-content;
+    height: min-content;
+    padding-top: 2px;
+    padding-left: 2px;
+    text-align: center;
+}
+
+.info {
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.info h5 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.info dl dd {
+    margin-bottom: 9px;
+    /* padding-left: 15px; */
+}
+
+.info dl dt {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    padding-left: 5px;
+}
+
+.vehicle {
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.map {
+    display: none;
+}
+
+/* #maptwo,
+#mapthree {
+    display: none;
+} */
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:900px) {
+    .home {
+        padding-top: 30px;
+        padding-left: 30px;
+
+    }
+
+    .home a {
+        color: rgb(27, 26, 26);
+        font-size: 1.7rem;
+    }
+
+    #location_wrap {
+        width: 100%;
+        height: 100%;
+        /* padding: 30px 0; */
+
+    }
+
+    .section-con {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+
+    }
+
+    .title-con>div>p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #444
+    }
+
+    .title-con>div>.nun {
+        font-weight: 900;
+        font-size: 1.7rem;
+        padding-bottom: 10px;
+
+    }
+
+    .title-con>div>h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: #222222
+    }
+
+
+    .lo-title {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -20px;
+        /* border:1px solid black; */
+        margin-left: 120px;
+        margin-bottom: 30px;
+    }
+
+    .lo-title a {
+        padding: 0;
+        border-bottom: 1px solid white;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: #444;
+    }
+
+    .lo-title a.active {
+        border-bottom: 1.7px solid #333;
+    }
+
+
+    hr {
+        margin-top: 10px;
+        background: rgb(224, 221, 221);
+        height: 1px;
+        border: 0;
+    }
+
+    .map {
+        width: 100%;
+        border: 1px solid rgb(194, 191, 191);
+        height: 520px;
+        /* padding: 10px; */
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .mapex {
+        width: 60%;
+
+    }
+
+    .info {
+        width: 40%;
+        margin-top: -10px;
+        padding-left: 80px;
+        padding-right: 0;
+        line-height: 1.6rem;
+    }
+
+    .info h5 {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+        text-align: justify;
+    }
+
+    .info dl dd {
+        margin-bottom: 15px;
+        /* padding-left: 15px; */
+    }
+
+    .info dl dt {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+        padding-left: 5px;
+    }
+
+    .vehicle {
+        font-weight: 900;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .home {
+        padding-top: 50px;
+        padding-left: 50px;
+
+    }
+
+    .home a {
+        color: rgb(41, 39, 39);
+        font-size: 1.7rem;
+    }
+
+    #location_wrap {
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        /* padding: 30px 0; */
+
+    }
+
+    .section-con {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+
+    }
+
+    .title-con>div>p {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #444
+    }
+
+    .title-con>div>.nun {
+        font-weight: 900;
+        font-size: 2.2rem;
+        padding-bottom: 10px;
+        ;
+    }
+
+    .title-con>div>h2 {
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+        color: #222222
+    }
+
+    .title-con {
+        width: 100%;
+        float: left;
+        /* border:1px solid black; */
+
+    }
+
+
+    .lo-title {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -30px;
+        /* border:1px solid black; */
+        margin-left: 150px;
+        margin-bottom: 30px;
+    }
+
+    .lo-title a {
+        padding: 0;
+        border-bottom: 1px solid white;
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: #444;
+    }
+
+    .lo-title a.active {
+        border-bottom: 2px solid #333;
+    }
+
+
+    hr {
+        margin-top: 10px;
+        background: rgb(224, 221, 221);
+        height: 1px;
+        border: 0;
+    }
+
+    .map {
+        width: 100%;
+        border: 1px solid rgb(194, 191, 191);
+        height: 520px;
+        /* padding: 10px; */
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .mapex {
+        width: 60%;
+
+    }
+
+    .info {
+        width: 40%;
+        margin-top: -10px;
+        padding-left: 30px;
+        padding-right: 0;
+        line-height: 2rem;
+    }
+
+    .info h5 {
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+        text-align: justify;
+    }
+
+    .info dl dd {
+        margin-bottom: 15px;
+        /* padding-left: 15px; */
+    }
+
+    .info dl dt {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #333;
+        padding-left: 5px;
+    }
+
+    .vehicle {
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+
+
+    /* #maptwo,
+    #mapthree {
+        display: none;
+    } */
+}
